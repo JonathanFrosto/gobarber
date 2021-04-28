@@ -13,6 +13,7 @@ class FkAppointmentsUsers1619577741821 implements MigrationInterface {
             new TableColumn({
                 name: 'provider_id',
                 type: 'uuid',
+                isNullable: true,
             }),
         );
 
@@ -23,6 +24,8 @@ class FkAppointmentsUsers1619577741821 implements MigrationInterface {
                 columnNames: ['provider_id'],
                 referencedColumnNames: ['users_id'],
                 referencedTableName: 'users',
+                onDelete: 'SET NULL',
+                onUpdate: 'CASCADE',
             }),
         );
     }
