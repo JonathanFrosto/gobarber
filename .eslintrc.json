@@ -18,7 +18,7 @@
         "prettier"
     ],
     "rules": {
-        "camelcase": ["error", {"allow": ["created_at", "updated_at"]}],
+        "camelcase": "off",
         "prettier/prettier": "error",
         "@typescript-eslint/indent": ["error", 4],
         "class-methods-use-this": "off",
