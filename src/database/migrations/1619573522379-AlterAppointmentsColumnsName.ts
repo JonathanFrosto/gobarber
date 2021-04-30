@@ -1,9 +1,4 @@
-import {
-    MigrationInterface,
-    QueryRunner,
-    TableColumn,
-    TableForeignKey,
-} from 'typeorm';
+import { MigrationInterface, QueryRunner } from 'typeorm';
 
 class AlterAppointmentsColumnsName1619573522379 implements MigrationInterface {
     public async up(queryRunner: QueryRunner): Promise<void> {
